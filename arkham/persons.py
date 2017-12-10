@@ -34,8 +34,11 @@ class Person(object):
         monster.check_horror(self)
         monster.check_fight(self)
 
-    def close(self, gate):
+    def rewards(self):
         pass
+
+    def close(self, gate):
+        self.rewards()
 
     def myth(self):
         Monsters().move()
